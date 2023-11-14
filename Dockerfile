@@ -55,8 +55,7 @@ RUN curl -fSLo MSBuild.Microsoft.VisualStudio.Web.targets.zip https://dotnetbina
 RUN powershell Get-ChildItem -Path '"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Microsoft\VisualStudio\v16.0"' –Recurse
 
 
-ENV DOTNET_USE_POLLING_FILE_WATCHER=true `
-    ROSLYN_COMPILER_LOCATION="C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\Roslyn" `
+ENV DOTNET_USE_POLLING_FILE_WATCHER=true `ROSLYN_COMPILER_LOCATION="C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\Roslyn" `
     # Ngen workaround: https://github.com/microsoft/dotnet-framework-docker/issues/231
     COMPLUS_NGenProtectedProcess_FeatureEnabled=0
 
