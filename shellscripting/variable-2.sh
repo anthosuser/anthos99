@@ -1,7 +1,7 @@
 #!/bin/bash
 a=20
 b=30
-if [[$a == $b ]]
+if [[ $a == $b ]]
 then
 echo "both a and b are equal"
 
