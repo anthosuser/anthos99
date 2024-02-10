@@ -1,0 +1,16 @@
+apiVersion: V1
+Kind: Pod
+metadata: 
+ name: web-pod
+ labels:
+  name: web-pod
+  env: dev
+spec:
+ containers:
+  - name: my-web
+    image: nginx
+    ports: 
+     - containerPort: 80
+       name: http
+       protocol: TCP
+      
