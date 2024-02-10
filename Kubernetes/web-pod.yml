@@ -1,5 +1,5 @@
-apiVersion: V1
-Kind: Pod
+apiVersion: v1
+kind: Pod
 metadata: 
  name: web-pod
  labels:
